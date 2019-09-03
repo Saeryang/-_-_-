@@ -12,3 +12,4 @@
 
 ## 첫번째 수업
 * https://cafe.naver.com/whatisc
+* 중간고사 전 퀴즈 - 계산기
