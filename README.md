@@ -15,11 +15,11 @@
 * 중간고사 전 퀴즈 - 계산기
 
 ## 1주차 - 수
-*MFC - microsoft foundation class
+* MFC - microsoft foundation class
 ### Dialog기반 프로그램 구성
 
-*GetDlgItemInt(IDE_EDIT1)
-*SetDlgItemInt(IDE_EDIT2)
+* GetDlgItemInt(IDE_EDIT1)
+* SetDlgItemInt(IDE_EDIT2)
 <br>
 void CMy190904Test2Dlg::OnBnClickedButton1()<br>
 {<br>
