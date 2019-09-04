@@ -18,12 +18,11 @@
 * MFC - microsoft foundation class
 ### Dialog기반 프로그램 구성
 
-* GetDlgItemInt(IDE_EDIT1)
-* SetDlgItemInt(IDE_EDIT2)
-<br>
-void CMy190904Test2Dlg::OnBnClickedButton1()<br>
-{<br>
-	CString me;<br>
-	GetDlgItemText(No_F, me);<br>
-	SetWindowText(me);<br>
-}<br>
+CString me;<br>
+GetDlgItemText(No_F, me);<br>
+SetWindowText(me);<br>
+
+int a GetDlgItemInt(IDC_EDIT1);<br>
+int a GetDlgItemInt(IDC_EDIT2);<br>
+int c = a + b;<br>
+SetDlgItemInt(IDC_EDIT3, c);<br>
