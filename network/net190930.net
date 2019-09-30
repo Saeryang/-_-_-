@@ -1,0 +1,70 @@
+autostart = False
+[127.0.0.1:7200]
+    workingdir = C:\Users\319-6\AppData\Local\Temp
+    udp = 10000
+    [[7200]]
+        image = D:\20141331\IOS\c7200-adventerprisek9-mz.124-2.T5.bin
+        ghostios = True
+    [[ROUTER R1]]
+        console = 2000
+        slot1 = PA-2FE-TX
+        f1/0 = R2 f1/0
+        x = -388.0
+        y = -50.0
+    [[ROUTER R2]]
+        console = 2001
+        slot1 = PA-2FE-TX
+        f1/0 = R1 f1/0
+        f1/1 = R3 f1/0
+        x = -279.0
+        y = 120.0
+[127.0.0.1:7201]
+    workingdir = C:\Users\319-6\AppData\Local\Temp
+    udp = 10100
+    [[7200]]
+        image = D:\20141331\IOS\c7200-adventerprisek9-mz.124-2.T5.bin
+        ghostios = True
+    [[ROUTER R4]]
+        console = 2004
+        slot1 = PA-2FE-TX
+        f1/0 = R3 f1/1
+        x = 63.0
+        y = 120.0
+    [[ROUTER R3]]
+        console = 2002
+        slot1 = PA-2FE-TX
+        f1/0 = R2 f1/1
+        f1/1 = R4 f1/0
+        x = -104.0
+        y = -46.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = f1/0
+        x = 1.67422674823
+        y = -2.87359905962
+        interface = R4 f1/0
+    [[NOTE 2]]
+        text = f1/1
+        x = 64.3257732518
+        y = 33.8735990596
+        interface = R3 f1/1
+    [[NOTE 3]]
+        text = f1/0
+        x = -28.9975310928
+        y = 32.5555829879
+        interface = R3 f1/0
+    [[NOTE 4]]
+        text = f1/1
+        x = 63.9975310928
+        y = 11.4444170121
+        interface = R2 f1/1
+    [[NOTE 5]]
+        text = f1/0
+        x = -28.9912495241
+        y = -21.8366370193
+        interface = R2 f1/0
+    [[NOTE 6]]
+        text = f1/0
+        x = 72.9912495241
+        y = 22.8366370193
+        interface = R1 f1/0
