@@ -88,6 +88,7 @@ int main()
 	return 0;
 }
 ```
+---
 ### 배열
 ```
 #include "stdafx.h"
@@ -113,6 +114,7 @@ int main()
 	return 0;
 }
 ```
+---
 ### 구조
 * 구조체(struct)기본
 ```
@@ -134,6 +136,7 @@ int main()
 	cout << si1.blood << endl;
 }
 ```
+---
 ### 포인터
 * 포인터 기본 정리
 ```
@@ -165,4 +168,5 @@ int main()
 	cout << "&p = " << &p << endl; // p도 변수이므로 주소가 있음
 }
 ```
+---
 ### 
