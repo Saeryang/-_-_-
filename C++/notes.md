@@ -1,7 +1,7 @@
 # C++ 수업
 ## 2019-10-04
 ### 배열
-`
+```
 #include "stdafx.h"
 #include <iostream>
 
@@ -24,5 +24,5 @@ int main()
 
 	return 0;
 }
-`
+```
 ###
