@@ -50,4 +50,25 @@ int main()
 	cout << si1.blood << endl;
 }
 ```
+### 포인터
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a = 123;
+	int* p;
+	p = &a;
+
+	cout << "a = " << a << endl; // a값
+	cout << "&a = " << &a << endl; // a의 주소값
+	cout << "p = " << p << endl; // p값
+	cout << "*p = " << *p << endl; // p의 주소가 가리키는 값
+	cout << "&p = " << &p << endl; // p도 변수이므로 주소가 있음
+
+}
+```
 ### 
