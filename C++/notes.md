@@ -29,4 +29,25 @@ int main()
 	return 0;
 }
 ```
-###
+### 구조
+* 구조체(struct)기본
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	struct StudentInfo // 구조체 생성
+	{
+		char blood;
+		int id;
+		float grade;
+	};
+
+	StudentInfo si1 = {'A',20141331,3};
+	cout << si1.blood << endl;
+}
+```
+### 
