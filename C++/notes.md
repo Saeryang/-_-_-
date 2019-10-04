@@ -1,7 +1,6 @@
 # C++ 수업
 ## 2019-10-04
 ### CASE문
-* 확인 요망
 ```
 #include "stdafx.h"
 #include <iostream>
@@ -42,6 +41,51 @@ int main()
 	return 0;
 }
  
+```
+* 문제점 검토 필요
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+ 
+ 
+int main()
+{
+	while(1)
+	{
+		// print menu
+		cout << "\n-----메뉴-----\n" <<endl;
+		cout << "1.  학생 성적 추가" <<endl;
+		cout << "2.  학생 성적 보기" <<endl;
+		cout << "Q.  프로그램  종료" <<endl;
+		cout << "------------------" <<endl;
+		cout << "번호를  입력하시오" <<endl;
+ 
+		char select;
+		cin >> select;
+ 
+		switch(select) 
+			{
+			case '1':
+				cout << " 성적 추가 선택";
+				break;
+			case '2':
+				cout << " 성적 보기 선택";
+				break;
+			
+			case 'q':
+			case 'Q':
+				cout << "프로그램 종료";
+				return;
+		
+			default:
+				cout << "올바른 값을 입력하시오";
+				break;
+			}
+	}
+	return 0;
+}
 ```
 ### 배열
 ```
