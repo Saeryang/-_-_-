@@ -280,3 +280,54 @@ int main()
 }
 ```
 ---
+* 둘 다 출력
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+struct Dizzy
+{
+	int id; // 고유값
+	Dizzy* p; // 포인터
+};
+
+int main()
+{
+	Dizzy data[10];
+	for(int i=0;i<=9;i++) // linked list로 연결됨
+	{
+		data[i].id = i; data[i].p = &data[i+1]; 
+		
+	}
+	data[9].p = 0; // 주소할당 끝
+	
+	Dizzy* p = &data[0];
+		while(p != 0)
+	{
+		cout << p->id <<endl;
+		p = p->p;
+	}
+		p = &data[0];
+
+//id가 4번인걸 삭제하고싶다?
+	cout << "<--4번 삭제-->" << endl;
+
+	while(p != 0)
+	{
+		if(p->id == 3)
+		{
+			p->p = (p->p)->p;
+			break;
+		}
+		p = p->p;
+	}
+	p = &data[0];
+	while(p != 0)
+	{
+		cout << p->id <<endl;
+		p = p->p;
+	}
+}
+```
