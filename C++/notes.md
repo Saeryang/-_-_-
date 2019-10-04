@@ -169,4 +169,114 @@ int main()
 }
 ```
 ---
-### 
+### Linked list
+* 기본.
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+struct Dizzy
+{
+	int id; // 고유값
+	Dizzy* p; // 포인터
+};
+
+int main()
+{
+	Dizzy a,b,c;
+	a.id =1; b.id = 4; c.id = 7; // Doyagao
+	a.p = &b;
+	b.p = &c;
+	c.p = 0; // 0번지에 뭐가 있다?X , 0 = 주소를 할당받지 않음 = 끝이다.
+	cout << "a값" << a.id << endl; // a값
+	cout << "b값" << b.id << endl; // a값
+	cout << "c값" << c.id << endl; // a값
+	cout << "a.p->id : " << a.p->id << endl;
+	cout << "a.p->p->id : " << a.p->p->id << endl;
+
+}
+```
+---
+* 심화 - for 문으로 다수의 연결 리스트
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+struct Dizzy
+{
+	int id; // 고유값
+	Dizzy* p; // 포인터
+};
+
+int main()
+{
+	Dizzy data[10];
+	for(int i=0;i<=9;i++) // linked list로 연결됨
+	{
+		data[i].id = i;
+		data[i].p = &data[i+1]; 
+		
+	}
+	data[9].p = 0; // 주소할당 끝
+	
+	Dizzy* p = &data[0];
+	while(p != 0)
+	{
+		cout << p->id <<endl;
+		p = p->p;
+	}
+}
+```
+---
+* 삭제
+```
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+struct Dizzy
+{
+	int id; // 고유값
+	Dizzy* p; // 포인터
+};
+
+int main()
+{
+	Dizzy data[10];
+	for(int i=0;i<=9;i++) // linked list로 연결됨
+	{
+		data[i].id = i;
+		data[i].p = &data[i+1]; 
+		
+	}
+	data[9].p = 0; // 주소할당 끝
+	
+	Dizzy* p = &data[0];
+	
+	//id가 4번인걸 삭제하고싶다?
+	cout << "<--4번 삭제-->" << endl;
+
+	while(p != 0)
+	{
+		if(p->id == 3)
+		{
+			p->p = (p->p)->p;
+			break;
+		}
+		cout << p->id <<endl;
+		p = p->p;
+	}
+
+	while(p != 0)
+	{
+		cout << p->id <<endl;
+		p = p->p;
+	}
+}
+```
+---
