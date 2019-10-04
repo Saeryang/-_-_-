@@ -6,7 +6,7 @@
 [--배열](#배열)  
 [--구조](#구조)  
 [--포인터](#포인터)  
-[--Linked list](Linked-list)  
+[--연결리스트](#연결리스트)  
 ## 2019-10-04
 ### CASE문
 ```
@@ -177,7 +177,7 @@ int main()
 }
 ```
 ---
-### Linked list
+### 연결리스트 (Linked list)
 * 기본.
 ```
 #include "stdafx.h"
