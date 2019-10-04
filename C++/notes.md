@@ -42,6 +42,7 @@ int main()
 }
  
 ```
+---
 * 문제점 검토 필요
 ```
 #include "stdafx.h"
