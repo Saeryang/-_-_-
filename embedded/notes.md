@@ -106,6 +106,7 @@ zImage 확인)
 if (!defined(@val)) {
 	@val = compute_values($hz);
 	}
-```
 #######
 Source/Filesystem# ./mkfs.sh
+```
+* 마지막 작업 zImage 설치
