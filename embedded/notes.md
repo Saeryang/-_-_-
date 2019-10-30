@@ -87,4 +87,25 @@
 ### 터미널
 
 
+## 2019-10-30
+~
+// apt-get install libncurses5-dev --yes
 
+cd arch/arm/boot/
+ls -l
+zImage 확인)
+
+파일시스템 압축 해제
+->
+
+사용핫루없다 디파인드 @어레이 
+커널/타임콘스트.pl의 373라인
+커널/타임콘스트.h 타겟에 대한 명령실패
+
+@val = 이하라인;
+if (!defined(@val)) {
+	@val = compute_values($hz);
+	}
+~
+#######
+Source/Filesystem# ./mkfs.sh
