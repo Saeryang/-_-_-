@@ -88,7 +88,7 @@
 
 
 ## 2019-10-30
-~
+```
 // apt-get install libncurses5-dev --yes
 
 cd arch/arm/boot/
@@ -106,6 +106,6 @@ zImage 확인)
 if (!defined(@val)) {
 	@val = compute_values($hz);
 	}
-~
+```
 #######
 Source/Filesystem# ./mkfs.sh
